@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'Satoshi-Variable';
+    src:url('Satoshi-Variable.ttf') format('truetype');
+    font-weight: 300 900;
+    font-display: swap;
+    font-style: normal;
+  }
+
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #f0f0f0;
+    font-family: 'Satoshi-Variable';
+}
+.game-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow:hidden ;
+   
+    
+}
+.header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    z-index: 99;
+    border-bottom: 1px solid rgb(255,255,255,12%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 110px;
+}
+.header-date{
+    display: flex;
+    gap :20px;
+    color:#fff;
+    align-items: center;
+    
+}
+.icone{
+    fill:#fff;
+    width: 20px;
+    height: 16px;
+}
+nav ul{
+    display: flex;
+    
+} 
+nav a{
+    color: #fff;
+    font-weight: 300;
+
+} 
+.menu-item{
+    padding: 8px 16px;
+}
+.menu-item.selected{
+    background-color: #fff;
+    border-radius: 100px;
+    
+}
+.menu-item.selected a{
+    color: black;
+    font-weight: bold;
+}
+.perfil{
+    display: flex;
+    align-items: center;
+    
+}
+.icone-header{
+
+margin-right: 32px;
+}
+.perfil-block{
+margin-left: 20px;
+line-height: 25px;
+color: #fff;
+
+}
+.info-perfil{
+  display: flex;
+}
+.nome-usuario{
+    color: white;
+    font-size: 14px;
+}
+.trophy{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.trophy-qtd{
+    color: rgba(255, 255, 255, 0.404);
+}
+.img-perfil{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    position: relative;
+
+    
+}
+.perfil img{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+
+    
+    
+}
+.img-perfil::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: inherit;
+    background-color: #01bb4b;
+    border: 2px solid white;
+}
+.background{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: brightness(50%);
+    transition: transform 0.5s ease-in-out;
+
+}
+.background.zoom {
+    transform: scale(1.1);
+}
+.slider {
+    width: 1250px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    padding-bottom: 10px;
+    overflow: hidden;
+    display:flex;
+    align-items: center;
+    height: 400px;
+
+}
+
+.slider-width {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    transition: all ease 0.5s;
+   
+}
+
+.card {
+    width: 280px; /* Mostra aproximadamente 3 cards por vez */
+    height: 320px;
+    border-radius: 24px;
+    font-size: 20px;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-image: linear-gradient( to bottom, rgba(255, 255, 255, 0.185) ,  transparent);
+    filter: drop-shadow(5px 5px 3px #00000033);
+    transition: all ease 0.5s;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+   
+    padding: 1px;
+  
+  
+}
+.controls{
+position: absolute;
+bottom: 41%;
+right: 20%;
+transition: all ease 0.5s;
+
+ }
+
+ .controls button{
+width: 40px;
+height: 40px;
+border-radius: 12px;
+background-color: transparent;
+font-size: 20px;
+font-weight: bold;
+color: white;
+border: none;
+cursor: pointer;
+transition: all ease 0.5s;
+
+     
+
+ }
+.next.selected,.prev.selected{ 
+background-color:rgba(0, 0, 0, 0.12);
+
+}.prev.disabled,.next.disabled{
+color:  rgb(255,255,255,12%);
+
+}
+.card.selected{
+transform: scale(1.1);
+border: 2px solid white;
+border-radius: 28px;
+}
+.card.selected img{
+border: 6px solid rgba(0, 0, 0, 0.233);
+ }
+
+ .info-game{
+    position: absolute;
+    z-index: 99;
+    top: 20%;
+    left: 5%;
+    color: #fff;
+    
+ }
+ .blur{
+    opacity: 0;
+ }
+ .info-game h2{
+    font-size: 56px;
+ }
+.info-game-statistcs{
+    display: flex;
+    gap: 32px;
+}
+.statistc div:nth-child(1){
+    color: #ffffff62;
+    margin-bottom: 10px;
+}
+.statistc div:nth-child(2){
+    font-size: 32px;
+}
+
