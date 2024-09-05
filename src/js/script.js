@@ -1,5 +1,5 @@
 
-// Função para mostrar os cards dinamicamente
+
 function showCard() {
     let gamesHtml = "";
     const cardContainer = document.querySelector('.slider-width');
@@ -13,25 +13,25 @@ function showCard() {
 
 showCard();
 
-// Definições iniciais
-const cards = document.querySelectorAll('.card'); // Seleciona todos os cards
-const totalCards = cards.length; // Define o total de cards
-const cardsPerView = 4; // Define quantos cards serão exibidos por vez
-const totalPages = Math.ceil(totalCards / cardsPerView); // Calcula o número total de páginas
-let currentPage = 0; // Inicializa a página atual
 
-// Define a largura total do container de slides
+const cards = document.querySelectorAll('.card'); 
+const totalCards = cards.length; 
+const cardsPerView = 4; 
+const totalPages = Math.ceil(totalCards / cardsPerView); 
+let currentPage = 0; 
+
+
 document.querySelector('.slider-width').style.width = `calc(312px * ${totalCards})`;
 
-let previousSelectedCard = null; // Variável para armazenar o card previamente selecionado
+let previousSelectedCard = null; 
 
-// Evento para selecionar o primeiro card ao carregar a página
+
 window.addEventListener('DOMContentLoaded', () => {
     if (cards.length > 0) {
         previousSelectedCard = cards[0];
         previousSelectedCard.classList.add('selected');
 
-        // Atualiza o background de acordo com o primeiro card
+      
         let game = games.find((game) => game.id === previousSelectedCard.id);
         if (game) {
             document.querySelector('.background').src = game.background;
@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded', () => {
     setInterval(timer,1000)
 });
 
-// Função para selecionar um card ao clicar
+
   function selectGame(e) {
     if (previousSelectedCard) {
         previousSelectedCard.classList.remove('selected');
@@ -56,7 +56,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
    
 
-    // Atualiza o background de acordo com o card selecionado
+  
     let game = games.find((game) => game.id === previousSelectedCard.id);
   
     const backgroundElement = document.querySelector('.background');
@@ -66,7 +66,6 @@ window.addEventListener('DOMContentLoaded', () => {
     const lastTrophyElement = document.querySelector('.lastTrophy')
     const descElemnt = document.querySelectorAll('.desc')
    
-    // Adiciona a classe de animação
     backgroundElement.classList.add('zoom');
     nomeElement.classList.add('blur')
     timeElement.classList.add('blur')
@@ -95,7 +94,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 
-// Função para atualizar o estado dos botões
+
 function updateButtonStates() {
     const nextButton = document.querySelector('.next');
     const prevButton = document.querySelector('.prev');
@@ -117,7 +116,7 @@ function updateButtonStates() {
     }
 }
 
-// Função para avançar para a próxima página
+
 function next() {
     if (currentPage < totalPages - 1) {
         currentPage++;
@@ -127,7 +126,7 @@ function next() {
     }
 }
 
-// Função para voltar para a página anterior
+
 function prev() {
     if (currentPage > 0) {
         currentPage--;
@@ -150,14 +149,14 @@ function timer(){
 
 
 
-// Inicializa o estado dos botões ao carregar a página
+
 updateButtonStates();
 
-// Adiciona eventos de clique aos botões
+
 document.querySelector('.next').addEventListener('click', next);
 document.querySelector('.prev').addEventListener('click', prev);
 
-// Adiciona eventos de clique a cada card
+
 cards.forEach((card) => {
     card.addEventListener('click', selectGame);
 });
