@@ -1,4 +1,4 @@
-//Game Showcase
+
 
 function showCard() {
     let gamesHtml = "";
