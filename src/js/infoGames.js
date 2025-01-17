@@ -63,11 +63,12 @@ let games=[
     background:'src/imgs/FN-Big.jpeg'
   },
   {
-    id:'spiderMan',
-    card:'src/imgs/SM2-Small.jpeg',
-    time: '2h 10min',
-    progress:'10%',
-    lastTrophy:'Leave Us Alone',
-    background:'src/imgs/SM2-Big.jpeg'
+    id:'granturismo7',
+    name:'Gran Turismo 7',
+    card:'src/imgs/GT-Small.jpeg',
+    time: '17 10min',
+    progress:'60%',
+    lastTrophy:'Beyond the Horizon',
+    background:'src/imgs/GT-Big.jpeg'
   },
 ]
