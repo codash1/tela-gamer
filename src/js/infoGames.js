@@ -6,7 +6,7 @@ let games=[
     time: '2h 10min',
     progress:'10%',
     lastTrophy:'Leave Us Alone',
-    background:'src/imgs/SM2-big.jpeg'
+    background:'src/imgs/SM2-Big.jpeg'
   },
   {
     id:'eldenRing',
@@ -15,7 +15,7 @@ let games=[
     time: '40min',
     progress:'2%',
     lastTrophy:'Bastardo Leonino',
-    background:'src/imgs/ER-big.jpeg'
+    background:'src/imgs/ER-Big.jpeg'
   },
   {
     id:'theLastOfUs',
@@ -24,7 +24,7 @@ let games=[
     time: '14h 40min',
     progress:'60%',
     lastTrophy:"Let's Gear Up",
-    background:'src/imgs/TLOU-big.jpeg'
+    background:'src/imgs/TLOU-Big.jpeg'
   },
   {
     id:'deathStranding',
@@ -33,7 +33,7 @@ let games=[
     time: '21h 30min',
     progress:'30%',
     lastTrophy:'The Particle of God',
-    background:'src/imgs/DS-small-big.jpg'
+    background:'src/imgs/DS-small-Big.jpg'
   },
   {
     id:'hogwartsLegacy',
@@ -42,7 +42,7 @@ let games=[
     time: '13h 45min',
     progress:'25%',
     lastTrophy:'Challenge Accepted',
-    background:'src/imgs/HL-big.jpg'
+    background:'src/imgs/HL-Big.jpg'
   },
   {
     id:'Cyberpunk2077',
@@ -64,10 +64,10 @@ let games=[
   },
   {
     id:'spiderMan',
-    card:'imgs/SM2-Small.jpeg',
+    card:'src/imgs/SM2-Small.jpeg',
     time: '2h 10min',
     progress:'10%',
     lastTrophy:'Leave Us Alone',
-    background:'imgs/SM2-big.jpeg'
+    background:'src/imgs/SM2-Big.jpeg'
   },
 ]
