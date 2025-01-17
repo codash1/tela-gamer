@@ -33,7 +33,7 @@ let games=[
     time: '21h 30min',
     progress:'30%',
     lastTrophy:'The Particle of God',
-    background:'src/imgs/DS-small-Big.jpg'
+    background:'src/imgs/DS-Small-Big.jpg'
   },
   {
     id:'hogwartsLegacy',
